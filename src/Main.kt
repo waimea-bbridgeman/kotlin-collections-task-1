@@ -166,9 +166,10 @@ fun longestMonkeyName(monkeyList: List<String>): String {
  */
 fun deleteFirstMonkey(monkeyList: MutableList<String>) {
     // Remove the first one from the list
+    println("Removing monkey: ${monkeyList[0]}")
     monkeyList.removeAt(0)
     // Show some feedback
-    println("Removing monkey: ${monkeyList[0]}")
+
 }
 
 
@@ -178,8 +179,10 @@ fun deleteFirstMonkey(monkeyList: MutableList<String>) {
  */
 fun deleteLastMonkey(monkeyList: MutableList<String>) {
     // Remove the last one from the list
-    monkeyList.removeAt(5)
+    val lastMonkey = monkeyList.size - 1
+    println("Removing monkey: ${monkeyList[lastMonkey]}")
+    monkeyList.removeAt(lastMonkey)
     // Show some feedback
-    println("Removing monkey: ${monkeyList[5]}")
+
 }
 
